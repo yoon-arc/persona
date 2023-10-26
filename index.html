@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Noto+Sans+KR&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/backasset.css">
+    
+    <title>PersonaTest</title>
+
+    <style>
+        body { background-image: url(/asset/mainpage.png)}
+    </style>
+</head>
+
+<body style="height: 8000px; width: 8000px; color: rgb(0, 0, 0); border-color: rgb(148, 148, 148);">
+    <link rel="mainpage" href="asset/mainpage.png">
+    
+
+    <!--랜딩페이지-->
+    <div id="landingPage" class="landingPage">
+        <img src="/asset/head.png">
+        <p class="title">persona</p>
+    </div>
+    <!--미니맵과 슬라이드-->
+    <div id="persona" class="personaTest" style="display:none">
+    <div class="map" tabindex="-1" style="width: 100vw; height: 100vh;">
+        <div class="minimap" >
+            <div id="red-dot" style="position:absolute; width:10px; height:10px;"></div>
+            
+            <div class="minimap mapIcon" data-target="Intro" tabindex="-1" style="width: 50px; height: 20px; top: 50px; left: 40px; z-index: 0; border: none; background: none; border-radius: 50%;">
+                <p class="minimap-letter">Intro</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoA" tabindex="-1" style="width: 50px; height: 25px; top: 170px; left: 60px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video A</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoB" tabindex="-1" style="width: 50px; height: 30px; top: 270px; left: 35px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video B</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoC" tabindex="-1" style="width: 60px; height: 30px; top: 325px; left: 100px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video C</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoD" tabindex="-1" style="width: 60px; height: 40px; top: 40px; left: 300px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video D</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoE" tabindex="-1" style="width: 55px; height: 30px; top: 345px; left: 245px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video E</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoF" tabindex="-1" style="width: 40px; height: 25px; top: 300px; left: 325px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">video F</p>
+            </div>
+            <div class="minimap mapIcon" data-target="letter" tabindex="-1" style="width: 14px; height: 14.04px; top: 100px; left: 290px; z-index: 0; border: none; background: none;">
+                <p class="minimap-letter">Letter</p>
+            </div>
+            <div class="minimap mapIcon" data-target="photo" tabindex="-1" style="width: 40px; height: 40px; top: 145px; left: 310px; z-index: 0; border: none; background: none; border-radius: 50%;">
+                <p class="minimap-letter">photo</p>
+            </div>
+            <div class="minimap mapIcon" data-target="VideoG" tabindex="-1" style="width: 40px; height: 25px; top: 200px; left: 185px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">Video G</p>
+            </div>
+            <div class="minimap mapIcon" data-target="chatbox" tabindex="-1" style="width: 18.12px; height: 14.04px; top: 56px; left: 180px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter">guest<br>book</p>
+            </div>
+            <div class="minimap mapIcon" data-target="artwork10" tabindex="-1" style="width: 15px; height: 15px; top: 140px; left: 195px; z-index: 0; border: none; background: none; border-radius: 50%;">
+                <p class="minimap-letter"></p>
+            </div>
+            <div class="minimap mapIcon" data-target="artwork10" tabindex="-1" style="width: 18.12px; height: 4px; top: 175px; left: 175px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter"></p>
+            </div>
+            <div class="minimap mapIcon" data-target="artwork10" tabindex="-1" style="width: 18.12px; height: 4px; top: 175px; left: 215px; z-index: 0; border: none; background: none; border-radius: 0%;">
+                <p class="minimap-letter"></p>
+            </div>
+            
+     </div>       
+    </div>
+    <div id="slider-container" style="z-index: 3;">
+        <input type="range" min="50" max="200" value="100" id="zoomSlider">
+    </div>
+
+    
+
+    <!--본문 내용*-->
+    <div class="Container">
+
+    <!--그림자-->
+        <div class="shadow" style="width: 1400px; height: 80px; top: 1950px; left: 5900px; z-index: 0;"></div>
+        <div class="shadow" style="width: 1100px; height: 110px; top: 6000px; left: 300px; z-index: 0;"></div>
+
+      
+    <!--본문 내용-->
+        <article id="Intro" class="text" data-domain="local" data-loaded="1" data-name="Persona Introduction" style="top: 750px; left: 760px; width: 725px; height: 594px; border: none; background-color: rgba(0, 0, 0, 0);">
+            <h1>Introduction</h1> 
+                <p>
+                    <br><br>Welcome! This unique online space allows you to delve into 'Jeff's' memories and mental world. 
+                    <br><br>Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
+                    <br><br>
+                    <br><br>1.To understand the story, watch the videos in alphabetical order from 'a' to 'i'.
+                    <br><br>2.Use the mini-map located at the top left to freely explore this space!
+                    <br><br>3.If you look closely at the elements within the space, you'll be able to discover new things!
+                    <br><br>4.We would appreciate it if you could leave your fresh perspectives and experiences in our guestbook.
+                    <br><br>
+                    <br><br>Enjoy your exploration!
+                </p>
+        </article>
+        <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2840px; left: 1050px; width: 1000px; height: 590px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe1" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoA" src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+                <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork40">
+            </div>
+        </article>
+        <article id="VideoB" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoB" data-youtubesync="true" style="z-index: 1; top: 4930px; left: 360px; width: 1200px; height: 770px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+                <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork39">
+            </div>
+        </article>
+        <article id="VideoC" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoC" data-youtubesync="true" style="z-index: 1; top: 6050px; left: 1670px; width: 1408px; height: 693px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe3" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoC" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+            </div>
+        </article>
+        <article id="VideoD" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoD" data-youtubesync="true" style="z-index: 1; top: 1130px; left: 5920px; width: 1300px; height: 700px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe4" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoD" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+            </div>
+        </article>
+        <article id="VideoE" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoE" data-youtubesync="true" style="z-index: 1; top: 6550px; left: 5530px; width: 1115px; height: 620px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe6" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoE" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+            </div>
+        </article>
+        <article id="VideoF" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoF" data-youtubesync="true" style="z-index: 1; top: 5855px; left: 6550px; width: 825px; height: 515px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe7" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoF" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+            </div>
+        </article>
+        <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3790px; width: 920px; height: 580px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <div style="width:100%; height:100%" class="iframe">
+                <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                </iframe>
+            </div>
+        </article>
+
+        <!--이미지 -->
+        <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
+            <div class="imgContainer" style="width: 800px; height: 1000px;">
+                <img src="/asset/foldNote.png" alt="note" class="imgSmall">
+                <img src="/asset/note.png" alt="note" class="imgLarge">
+            </div>
+        </article>
+
+         <div id="photo" class="world">
+           <section class="poster">
+                <figure class="ploar">
+                    <img src="/asset/ploar.png">
+                </figure>
+                <figure class="ploar">
+                    <img src="/asset/ploarM.png">
+                </figure>                    
+                <figure class="ploar">
+                    <img src="/asset/ploarF.gif">
+                </figure>
+            </section>
+        </div>
+     
+        <!--이미지 -->
+
+        
+        <article id="chatbox" class="chatbox" data-domain="local" data-loaded="0" data-type="art" aria-label="Chat here" style="z-index: 1; top: 1310px; left: 4030px; width: 800px; height: 730px; border-width: 1px;">
+            <div class="messageContainer">
+                <div class="chatMessage">
+                    <div class="avatarHeader" aria-hidden="true"></div>
+                </div>
+                
+            </div>
+                    <form class="chatboxControlls"><input type="text" placeholder="Type a message..." class="chatboxInput" aria-label="Type">
+                        <input class="chatboxButton" type="submit" value="❤️" aria-label="Send message">
+                    </form>
+
+                    <div class="nicknameInputContainer">
+                        <label for="nicknameInput">Name:</label>
+                        <input type="text" id="nicknameInput" class="nicknameInput">
+                    </div>        
+        </article>
+        
+        <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
+            <p class="text">video A</p>
+        </div>
+        <!--구름-->
+        <div class="cloud-container2" style="top: 6500px; left: 1000px; z-index: 10;">
+            <img src="/asset/pCloud3.png" alt="Cloud">
+        </div>
+    </div>
+    </div>
+
+    <script src="/js/minimap.js"></script>
+    <script src="/js/chatbox.js"></script>
+    <!--<script src="/js/mapTrack.js"></script>-->
+    <script src="/js/personaTest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/timeout.js"></script>
+</body>
+</html>
