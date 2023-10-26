@@ -9,13 +9,10 @@
     
     <title>PersonaTest</title>
 
-    <style>
-        body { background-image: url(asset/mainpage.png)}
-    </style>
 </head>
 
-<body style="height: 8000px; width: 8000px; color: rgb(0, 0, 0); border-color: rgb(148, 148, 148);">
-    <link rel="mainpage" href="asset/mainpage.png">
+<body id="theBody" style="height: 8000px; width: 8000px; color: rgb(0, 0, 0); border-color: rgb(148, 148, 148); background-image: url(asset/mainpage.png); background-repeat: no-repeat;">
+   
     
 
     <!--랜딩페이지-->
@@ -74,128 +71,133 @@
             
      </div>       
     </div>
-    <div id="slider-container" style="z-index: 3;">
-        <input type="range" min="50" max="200" value="100" id="zoomSlider">
-    </div>
-
     
-
+    
     <!--본문 내용*-->
+    
     <div class="Container">
-
+        
     <!--그림자-->
         <div class="shadow" style="width: 1400px; height: 80px; top: 1950px; left: 5900px; z-index: 0;"></div>
         <div class="shadow" style="width: 1100px; height: 110px; top: 6000px; left: 300px; z-index: 0;"></div>
-
-      
-    <!--본문 내용-->
-        <article id="Intro" class="text" data-domain="local" data-loaded="1" data-name="Persona Introduction" style="top: 750px; left: 760px; width: 725px; height: 594px; border: none; background-color: rgba(0, 0, 0, 0);">
-            <h1>Introduction</h1> 
-                <p>
-                    <br><br>Welcome! This unique online space allows you to delve into 'Jeff's' memories and mental world. 
-                    <br><br>Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
-                    <br><br>
-                    <br><br>1.To understand the story, watch the videos in alphabetical order from 'a' to 'i'.
-                    <br><br>2.Use the mini-map located at the top left to freely explore this space!
-                    <br><br>3.If you look closely at the elements within the space, you'll be able to discover new things!
-                    <br><br>4.We would appreciate it if you could leave your fresh perspectives and experiences in our guestbook.
-                    <br><br>
-                    <br><br>Enjoy your exploration!
-                </p>
-        </article>
-        <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2840px; left: 1050px; width: 1000px; height: 590px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe1" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoA" src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-                <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork40">
-            </div>
-        </article>
-        <article id="VideoB" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoB" data-youtubesync="true" style="z-index: 1; top: 4930px; left: 360px; width: 1200px; height: 770px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-                <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork39">
-            </div>
-        </article>
-        <article id="VideoC" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoC" data-youtubesync="true" style="z-index: 1; top: 6050px; left: 1670px; width: 1408px; height: 693px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe3" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoC" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-            </div>
-        </article>
-        <article id="VideoD" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoD" data-youtubesync="true" style="z-index: 1; top: 1130px; left: 5920px; width: 1300px; height: 700px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe4" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoD" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-            </div>
-        </article>
-        <article id="VideoE" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoE" data-youtubesync="true" style="z-index: 1; top: 6550px; left: 5530px; width: 1115px; height: 620px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe6" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoE" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-            </div>
-        </article>
-        <article id="VideoF" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoF" data-youtubesync="true" style="z-index: 1; top: 5855px; left: 6550px; width: 825px; height: 515px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe7" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoF" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-            </div>
-        </article>
-        <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3790px; width: 920px; height: 580px; border-width: 1px; background-color: rgb(255, 255, 255);">
-            <div style="width:100%; height:100%" class="iframe">
-                <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
-                </iframe>
-            </div>
-        </article>
-
-        <!--이미지 -->
-        <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
-            <div class="imgContainer" style="width: 800px; height: 1000px;">
-                <img src="asset/foldNote.png" alt="note" class="imgSmall">
-                <img src="asset/note.png" alt="note" class="imgLarge">
-            </div>
-        </article>
-
-         <div id="photo" class="world">
-           <section class="poster">
-                <figure class="ploar">
-                    <img src="asset/ploar.png">
-                </figure>
-                <figure class="ploar">
-                    <img src="asset/ploarM.png">
-                </figure>                    
-                <figure class="ploar">
-                    <img src="asset/ploarF.gif">
-                </figure>
-            </section>
-        </div>
-     
-        <!--이미지 -->
-
         
-        <article id="chatbox" class="chatbox" data-domain="local" data-loaded="0" data-type="art" aria-label="Chat here" style="z-index: 1; top: 1310px; left: 4030px; width: 800px; height: 730px; border-width: 1px;">
-            <div class="messageContainer">
-                <div class="chatMessage">
-                    <div class="avatarHeader" aria-hidden="true"></div>
+        <div id="zoom">
+    <!--본문 내용-->
+            <article id="Intro" class="text" data-domain="local" data-loaded="1" data-name="Persona Introduction" style="top: 750px; left: 760px; width: 725px; height: 594px; border: none; background-color: rgba(0, 0, 0, 0);">
+                <h1>Introduction</h1> 
+                    <p>
+                        <br><br>Welcome! This unique online space allows you to delve into 'Jeff's' memories and mental world. 
+                        <br><br>Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
+                        <br><br>
+                        <br><br>1.To understand the story, watch the videos in alphabetical order from 'a' to 'i'.
+                        <br><br>2.Use the mini-map located at the top left to freely explore this space!
+                        <br><br>3.If you look closely at the elements within the space, you'll be able to discover new things!
+                        <br><br>4.We would appreciate it if you could leave your fresh perspectives and experiences in our guestbook.
+                        <br><br>
+                        <br><br>Enjoy your exploration!
+                    </p>
+            </article>
+            <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2840px; left: 1050px; width: 1000px; height: 590px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe1" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoA" src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                    <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork40">
                 </div>
+            </article>
+            <article id="VideoB" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoB" data-youtubesync="true" style="z-index: 1; top: 4930px; left: 360px; width: 1200px; height: 770px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                    <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork39">
+                </div>
+            </article>
+            <article id="VideoC" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoC" data-youtubesync="true" style="z-index: 1; top: 6050px; left: 1670px; width: 1408px; height: 693px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe3" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoC" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                </div>
+            </article>
+            <article id="VideoD" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoD" data-youtubesync="true" style="z-index: 1; top: 1130px; left: 5920px; width: 1300px; height: 700px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe4" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoD" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                </div>
+            </article>
+            <article id="VideoE" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoE" data-youtubesync="true" style="z-index: 1; top: 6550px; left: 5530px; width: 1115px; height: 620px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe6" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoE" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                </div>
+            </article>
+            <article id="VideoF" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoF" data-youtubesync="true" style="z-index: 1; top: 5855px; left: 6550px; width: 825px; height: 515px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe7" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoF" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                </div>
+            </article>
+            <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3790px; width: 920px; height: 580px; border-width: 1px; background-color: rgb(255, 255, 255);">
+                <div style="width:100%; height:100%" class="iframe">
+                    <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    </iframe>
+                </div>
+            </article>
+
+            <!--이미지 -->
+            <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
+                <div class="imgContainer" style="width: 800px; height: 1000px;">
+                    <img src="asset/foldNote.png" alt="note" class="imgSmall">
+                    <img src="asset/note.png" alt="note" class="imgLarge">
+                </div>
+            </article>
+
+            <div id="photo" class="world">
+            <section class="poster">
+                    <figure class="ploar">
+                        <img src="asset/ploar.png">
+                    </figure>
+                    <figure class="ploar">
+                        <img src="asset/ploarM.png">
+                    </figure>                    
+                    <figure class="ploar">
+                        <img src="asset/ploarF.gif">
+                    </figure>
+                </section>
+            </div>
+        
+            <!--이미지 -->
+
+            
+            <article id="chatbox" class="chatbox" data-domain="local" data-loaded="0" data-type="art" aria-label="Chat here" style="z-index: 1; top: 1310px; left: 4030px; width: 800px; height: 730px; border-width: 1px;">
+                <div class="messageContainer">
+                    <div class="chatMessage">
+                        <div class="avatarHeader" aria-hidden="true"></div>
+                    </div>
+                    
+                </div>
+                        <form class="chatboxControlls"><input type="text" placeholder="Type a message..." class="chatboxInput" aria-label="Type">
+                            <input class="chatboxButton" type="submit" value="❤️" aria-label="Send message">
+                        </form>
+
+                        <div class="nicknameInputContainer">
+                            <label for="nicknameInput">Name:</label>
+                            <input type="text" id="nicknameInput" class="nicknameInput">
+                        </div>        
+            </article>
+            
+            <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
+                <p class="text">video A</p>
+            </div>
+            <!--구름-->
+            <div class="cloud-container2" style="top: 6500px; left: 1000px; z-index: 10;">
+                <img src="asset/pCloud3.png" alt="Cloud">
+            </div>
+        </div>
+        <div  style=" position: fixed; top: 5vh; left: 50%;">
+            <div class="slidecontainer">
+                <p style="margin-left:44px">Zoom</p>
+                <input type="range" min="12" max="100" value="100" class="slider" id="myRange">
                 
             </div>
-                    <form class="chatboxControlls"><input type="text" placeholder="Type a message..." class="chatboxInput" aria-label="Type">
-                        <input class="chatboxButton" type="submit" value="❤️" aria-label="Send message">
-                    </form>
-
-                    <div class="nicknameInputContainer">
-                        <label for="nicknameInput">Name:</label>
-                        <input type="text" id="nicknameInput" class="nicknameInput">
-                    </div>        
-        </article>
-        
-        <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
-            <p class="text">video A</p>
-        </div>
-        <!--구름-->
-        <div class="cloud-container2" style="top: 6500px; left: 1000px; z-index: 10;">
-            <img src="asset/pCloud3.png" alt="Cloud">
         </div>
     </div>
     </div>
@@ -206,5 +208,18 @@
     <script src="./js/personaTest.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/timeout.js"></script>
+    <script>
+        var slider = document.getElementById("myRange");
+        //var output = document.getElementById("demo");
+        //output.innerHTML = slider.value;
+        var zoomPercentage = document.getElementById("zoom");
+
+        slider.oninput = function() {
+          //output.innerHTML = this.value;
+          zoomPercentage.style.zoom = this.value + '%';
+          //document.body.style.backgroundSize = this.value+'%';
+        }
+        
+        </script>
 </body>
 </html>
