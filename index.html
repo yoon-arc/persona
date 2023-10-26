@@ -11,7 +11,7 @@
 
 </head>
 
-<body id="theBody" style="height: 8000px; width: 8000px; color: rgb(0, 0, 0); border-color: rgb(148, 148, 148); background-image: url(asset/mainpage.png); background-repeat: no-repeat;">
+<body style="height: 8000px; width: 8000px; color: rgb(0, 0, 0); border-color: rgb(148, 148, 148); background-image: url(asset/mainpage.png); background-repeat: no-repeat;">
    
     
 
@@ -144,9 +144,12 @@
 
             <!--이미지 -->
             <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
-                <div class="imgContainer" style="width: 800px; height: 1000px;">
-                    <img src="asset/foldNote.png" alt="note" class="imgSmall">
-                    <img src="asset/note.png" alt="note" class="imgLarge">
+                <div class="imgContainer" style="width: 800px; height: 1000px;" onmousedown="switchImage()" onmouseout="resetImage()" onmouseover="showNote()">
+                    <img id="foldNote" src="asset/foldNote.png" alt="note" class="imgSmall">
+                    <div id="hiddenNote" style="display:none">
+                        <img id="koreanNote" src="asset/note.png" alt="note" class="imgLarge">
+                        <img id="englishNote" src="asset/Youngjournal.png" alt="note" class="imgLarge">
+                    </div>
                 </div>
             </article>
 
@@ -209,7 +212,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/timeout.js"></script>
     <script>
-        var slider = document.getElementById("myRange");
+       /* var slider = document.getElementById("myRange");
         //var output = document.getElementById("demo");
         //output.innerHTML = slider.value;
         var zoomPercentage = document.getElementById("zoom");
@@ -220,7 +223,35 @@
           //document.body.style.backgroundSize = 8000*1/this.value+'%';
           //document.body.style.height=this.value+'%';
           //document.body.style.width=this.value+'%';
+        }*/
+
+        function switchImage(){
+            document.getElementById("koreanNote").style.visibility="hidden";
+            document.getElementById("englishNote").style.visibility="visible";
         }
+
+        function resetImage(){
+            console.log('reset image');
+            document.getElementById("hiddenNote").style.display="none";
+            document.getElementById("foldNote").style.visibility="visible";
+        } 
+        
+        function showNote(){
+            console.log('show note')
+            document.getElementById("englishNote").style.visibility="hidden";
+            document.getElementById("koreanNote").style.visibility="visible";
+            document.getElementById("foldNote").style.visibility="hidden";
+            document.getElementById("hiddenNote").style.display="block";
+        }
+
+
+        /*<div class="imgContainer" style="width: 800px; height: 1000px;" onclick="switchImage()" onmouseout="resetImage()" onmouseover="showNote()">
+            <img id="foldNote" src="asset/foldNote.png" alt="note" class="imgSmall">
+            <div id="hiddenNote" style="dipslay:none">
+                <img id="koreanNote" src="asset/note.png" alt="note" class="imgLarge">
+                <img id="englishNote" src="asset/Youngjournal.png" alt="note" class="imgLarge">
+            </div>
+        </div>*/
         
         </script>
 </body>

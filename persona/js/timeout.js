@@ -18,6 +18,7 @@ setInterval(() => {
 function backToLanding(){
     document.getElementById('landingPage').style.display = 'block';
     document.getElementById('persona').style.display = 'none';
+
 }
 
 function showPersona(){
