@@ -20,6 +20,7 @@
         <img src="./assets/head.png">
         <p class="title">persona</p>
     </div>
+
     <!--미니맵과 슬라이드-->
     <div id="persona" class="personaTest" style="display:none">
     <div class="map" tabindex="-1" style="width: 100vw; height: 100vh;">
@@ -77,11 +78,6 @@
     
     <div class="Container">
         
-    <!--그림자-->
-        <div class="shadow" style="width: 1400px; height: 80px; top: 1950px; left: 5900px; z-index: 0;"></div>
-        <div class="shadow" style="width: 1100px; height: 110px; top: 6000px; left: 300px; z-index: 0;"></div>
-        
-        <div id="zoom">
     <!--본문 내용-->
             <article id="Intro" class="text" data-domain="local" data-loaded="1" data-name="Persona Introduction" style="top: 750px; left: 760px; width: 725px; height: 594px; border: none; background-color: rgba(0, 0, 0, 0);">
                 <h1>Introduction</h1> 
@@ -97,13 +93,18 @@
                         <br><br>Enjoy your exploration!
                     </p>
             </article>
-            <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2840px; left: 1050px; width: 1000px; height: 590px; border-width: 1px; background-color: rgb(255, 255, 255);">
+
+            <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
+                <p class="text">video A</p>
+            </div>
+            <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2840px; left: 1050px; width: 1000px; height: 590px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe1" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoA" src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe1" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay; fullscreen" muted="" width="100%" height="100%" tabindex="-1" title="VideoA" src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                     <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork40">
                 </div>
             </article>
+    
             <article id="VideoB" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoB" data-youtubesync="true" style="z-index: 1; top: 4930px; left: 360px; width: 1200px; height: 770px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
                     <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/N9C6Gev-Ico?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
@@ -143,7 +144,7 @@
             </article>
 
             <!--이미지 -->
-            <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
+            <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 900px; height: 900px; border: none; background-color: rgba(0, 0, 0, 0);">
                 <div class="imgContainer" style="width: 800px; height: 1000px;" onmousedown="switchImage()" onmouseout="resetImage()" onmouseover="showNote()">
                     <img id="foldNote" src="./assets/foldNote.png" alt="note" class="imgSmall">
                     <div id="hiddenNote" style="display:none">
@@ -178,7 +179,7 @@
                     
                 </div>
                         <form class="chatboxControlls"><input type="text" placeholder="Type a message..." class="chatboxInput" aria-label="Type">
-                            <input class="chatboxButton" type="submit" value="❤️" aria-label="Send message">
+                            <input class="chatboxButton" type="submit" value="👁️" aria-label="Send message">
                         </form>
 
                         <div class="nicknameInputContainer">
@@ -187,15 +188,12 @@
                         </div>        
             </article>
             
-            <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
-                <p class="text">video A</p>
-            </div>
+            
             <!--구름-->
             <div class="cloud-container2" style="top: 6500px; left: 1000px; z-index: 10;">
                 <img src="./assets/pCloud3.png" alt="Cloud">
             </div>
         </div>
-    </div>
     </div>
 
     <script src="./js/minimap.js"></script>

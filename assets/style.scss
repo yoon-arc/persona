@@ -27,24 +27,7 @@ body {
     right: 0;
 }
 
-.shadow{
-  position: absolute;
-  border-radius: 50% /50%;
-  background-blend-mode: screen;
-  background-color: rgb(153,153,255);
-  filter: blur(10px);
- }
 
-.fade {
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    transition: background 0.4s;
-    z-index: 50;
-}
 
 article {
     position: absolute;
@@ -84,14 +67,6 @@ article div.iframe {
 }
 
 
-
-article img {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 
 .map {
     position: relative;
@@ -269,3 +244,4 @@ article.shape.circle, .mapIcon.shape.circle {
 }
 
 /*맵배경 모양 변경 여까지*/
+
