@@ -192,13 +192,13 @@
                 <img src="asset/pCloud3.png" alt="Cloud">
             </div>
         </div>
-        <div  style=" position: fixed; top: 5vh; left: 50%;">
+        <!--<div  style=" position: fixed; top: 5vh; left: 50%;">
             <div class="slidecontainer">
                 <p style="margin-left:44px">Zoom</p>
                 <input type="range" min="12" max="100" value="100" class="slider" id="myRange">
                 
             </div>
-        </div>
+        </div>-->
     </div>
     </div>
 
@@ -217,7 +217,9 @@
         slider.oninput = function() {
           //output.innerHTML = this.value;
           zoomPercentage.style.zoom = this.value + '%';
-          //document.body.style.backgroundSize = this.value+'%';
+          //document.body.style.backgroundSize = 8000*1/this.value+'%';
+          //document.body.style.height=this.value+'%';
+          //document.body.style.width=this.value+'%';
         }
         
         </script>
