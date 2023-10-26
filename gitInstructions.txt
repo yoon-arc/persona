@@ -1,0 +1,10 @@
+How to push updates to github
+
+- open terminal in vs code
+- cd desktop
+- cd persona
+- git add *
+- git commit -m 'put your message here'
+- git push 
+
+make sure to copy any asset or js changes into both the persona folder and top level folder
