@@ -195,13 +195,6 @@
                 <img src="./assets/pCloud3.png" alt="Cloud">
             </div>
         </div>
-        <!--<div  style=" position: fixed; top: 5vh; left: 50%;">
-            <div class="slidecontainer">
-                <p style="margin-left:44px">Zoom</p>
-                <input type="range" min="12" max="100" value="100" class="slider" id="myRange">
-                
-            </div>
-        </div>-->
     </div>
     </div>
 
@@ -212,47 +205,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/timeout.js"></script>
     <script>
-       /* var slider = document.getElementById("myRange");
-        //var output = document.getElementById("demo");
-        //output.innerHTML = slider.value;
-        var zoomPercentage = document.getElementById("zoom");
-
-        slider.oninput = function() {
-          //output.innerHTML = this.value;
-          zoomPercentage.style.zoom = this.value + '%';
-          //document.body.style.backgroundSize = 8000*1/this.value+'%';
-          //document.body.style.height=this.value+'%';
-          //document.body.style.width=this.value+'%';
-        }*/
-
         function switchImage(){
             document.getElementById("koreanNote").style.visibility="hidden";
             document.getElementById("englishNote").style.visibility="visible";
         }
 
         function resetImage(){
-            console.log('reset image');
             document.getElementById("hiddenNote").style.display="none";
             document.getElementById("foldNote").style.visibility="visible";
         } 
         
         function showNote(){
-            console.log('show note')
             document.getElementById("englishNote").style.visibility="hidden";
             document.getElementById("koreanNote").style.visibility="visible";
             document.getElementById("foldNote").style.visibility="hidden";
             document.getElementById("hiddenNote").style.display="block";
         }
-
-
-        /*<div class="imgContainer" style="width: 800px; height: 1000px;" onclick="switchImage()" onmouseout="resetImage()" onmouseover="showNote()">
-            <img id="foldNote" src="asset/foldNote.png" alt="note" class="imgSmall">
-            <div id="hiddenNote" style="dipslay:none">
-                <img id="koreanNote" src="asset/note.png" alt="note" class="imgLarge">
-                <img id="englishNote" src="asset/Youngjournal.png" alt="note" class="imgLarge">
-            </div>
-        </div>*/
-        
         </script>
 </body>
 </html>
