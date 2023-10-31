@@ -34,6 +34,19 @@
 
 /*렌딩 페이지*/
 
+#persona, #landingPage {
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+#landingPage {
+  opacity: 1;
+}
+
+.visible {
+  opacity: 1;
+}
+
 
 .landingPage{
 width: 100%;
@@ -48,7 +61,6 @@ background-image: linear-gradient(rgb(1,166,251), rgb(238,240,244));
 
 
 
-
 .landingPage img{
   display: block;
   margin: 0 auto;
@@ -57,15 +69,38 @@ background-image: linear-gradient(rgb(1,166,251), rgb(238,240,244));
 }
 
 
-.title{
-margin-top: 5px;
-margin-left: 25rem;
-color: rgb(255,234,44);
-font-size: 20rem;
+.title {
+  margin-top: 5px;
+  margin-left: 25rem;
+  color: rgb(255,234,44);
+  font-size: 20rem;
+  animation-name: colorChange;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
 //font-family: 'Cinzel Decorative';//
 font-family: 'Rubik Beastly', cursive;
 
 }
+
+@keyframes colorChange {
+  0% {color: rgb(255, 0, 242);}
+  25% {color: yellow;}
+  50% {color: rgb(255, 0, 242);}
+  75% {color: yellow;}
+  100% {color: rgb(255, 0, 242);}
+}
+
+.MainT{
+  margin-top: 20rem;
+  margin-left: 35rem;
+  font-size: 10rem;
+  animation-name: colorChange;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  font-family: 'Rubik Beastly', cursive;
+
+}
+
 
 .imgContainer {
   position: relative;
@@ -87,6 +122,9 @@ font-family: 'Rubik Beastly', cursive;
   width:100%; 
   transform: rotate(-5deg);
 }
+
+
+
 
 
 .poster{
@@ -131,4 +169,11 @@ transform: translateZ(30px);
 top: 2670px; 
 left: 5860px;
 transform: translateZ(70px);
+}
+
+
+.glitch {
+  position: absolute;
+  left: 5000px;
+  top: 6000px;
 }

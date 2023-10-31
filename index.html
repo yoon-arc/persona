@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Noto+Sans+KR&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Noto+Sans+KR:wght@400;500&family=Rubik+Beastly&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/backasset.css">
     
@@ -51,6 +53,9 @@
             <div class="minimap mapIcon" data-target="letter" tabindex="-1" style="width: 14px; height: 14.04px; top: 100px; left: 290px; z-index: 0; border: none; background: none;">
                 <p class="minimap-letter">Letter</p>
             </div>
+            <div class="minimap mapIcon" data-target="journal" tabindex="-1" style="width: 20px; height: 10px; top: 280px; left: 150px; z-index: 0; border: none; background: none;">
+                <p class="minimap-letter">journal</p>
+            </div>
             <div class="minimap mapIcon" data-target="photo" tabindex="-1" style="width: 40px; height: 40px; top: 145px; left: 310px; z-index: 0; border: none; background: none; border-radius: 50%;">
                 <p class="minimap-letter">photo</p>
             </div>
@@ -82,11 +87,13 @@
     <div class="Container">
         
     <!--본문 내용-->
-            <article id="Intro" class="text" data-domain="local" data-loaded="1" data-name="Persona Introduction" style="top: 750px; left: 760px; width: 725px; height: 594px; border: none; background-color: rgba(0, 0, 0, 0);">
-                <h1>Introduction</h1> 
+            <p class="MainT">persona</p>
+            <article id="Intro" data-domain="local" data-loaded="1" data-name="Persona Introduction">
+                <!-- <div class="text">
+                    <h1>Introduction</h1> 
                     <p>
                         <br><br>Welcome! This unique online space allows you to delve into 'Jeff's' memories and mental world. 
-                        <br><br>Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
+                        Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
                         <br><br>
                         <br><br>1.To understand the story, watch the videos in alphabetical order from 'a' to 'i'.
                         <br><br>2.Use the mini-map located at the top left to freely explore this space!
@@ -95,10 +102,26 @@
                         <br><br>
                         <br><br>Enjoy your exploration!
                     </p>
+                </div> -->
+
+                <div class="text">
+                    <h1>안내글</h1> 
+                    <p>
+                        <br><br>환영합니다! 이 온라인 공간은 '제프'의 추억과 정신세계를 탐험할 수 있도록 설계되어 있습니다.
+                        공간 내 배치된 영상과 인터랙티브 요소를 통해 스토리를 즐겨주세요. 원활한 관람을 위해 아래 가이드라인을 참고하시기 바랍니다  👀🌟👀
+                        <br><br>
+                        <br><br>▪️ 왼쪽 상단에 있는 <i><b>미니 맵을 눌러서</b></i> 자유롭게 공간을 돌아다니세요!
+                        <br><br>▪️ 미니맵을 참고하며 'video A'부터 'Video G'까지 <i><b>알파벳 순서대로</b></i> 영상을 시청해 주세요
+                        <br><br>▪️ 영상 근처 <i><b>사물에 마우스를 올리시면</b></i> 새로운 것들을 발견할 수 있습니다!
+                        <br><br>▪️ 관람 후 미니맵을 통해 guest book로 이동하여 여러분의 경험을 남겨주세요🤍 
+                        <br><br>
+                        <br><br>즐거운 관람 되세요!
+                    </p>
+                </div>
             </article>
 
             <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
-                <p class="text">video A</p>
+                <p class="videoTag">video A</p>
             </div>
             <article id="VideoA" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-type="art" data-src="https://www.youtube-nocookie.com/embed/6uR5DiuV9TM?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoA" data-youtubesync="true" style="z-index: 1; top: 2830px; left: 1050px; width: 1500px; height: 940px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
@@ -139,7 +162,7 @@
                     </iframe>
                 </div>
             </article>
-            <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3790px; width: 920px; height: 580px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3590px; width: 1320px; height: 780px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
                     <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
@@ -147,6 +170,16 @@
             </article>
 
             <!--이미지 -->
+            <article id="journal" class="" style="z-index: 1; top: 5080px; left: 2000px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
+                <div class="imgContainer" style="width: 800px; height: 1000px;" onmousedown="switchJR()" onmouseout="resetJR()" onmouseover="showJR()">
+                    <img id="OBJR" src="./assets/foldNote.png" alt="journal" class="imgSmall">
+                    <div id="hiddenJR" style="display:none">
+                        <img id="KRJR" src="./assets/Youngjournal.png" alt="journal" class="imgLarge">
+                        <img id="ENJR" src="./assets/Youngjournal_EN.png" alt="journal" class="imgLarge">
+                    </div>
+                </div>
+            </article>
+
             <article id="letter" class="" style="z-index: 1; top: 1780px; left: 5700px; width: 900px; height: 900px; border: none; background-color: rgba(0, 0, 0, 0);">
                 <div class="imgContainer" style="width: 800px; height: 1000px;" onmousedown="switchImage()" onmouseout="resetImage()" onmouseover="showNote()">
                     <img id="foldNote" src="./assets/foldNote.png" alt="note" class="imgSmall">
@@ -207,23 +240,6 @@
     <script src="./js/personaTest.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/timeout.js"></script>
-    <script>
-        function switchImage(){
-            document.getElementById("koreanNote").style.visibility="hidden";
-            document.getElementById("englishNote").style.visibility="visible";
-        }
-
-        function resetImage(){
-            document.getElementById("hiddenNote").style.display="none";
-            document.getElementById("foldNote").style.visibility="visible";
-        } 
-        
-        function showNote(){
-            document.getElementById("englishNote").style.visibility="hidden";
-            document.getElementById("koreanNote").style.visibility="visible";
-            document.getElementById("foldNote").style.visibility="hidden";
-            document.getElementById("hiddenNote").style.display="block";
-        }
-        </script>
+    <script src="./js/hideshow.js"></script>
 </body>
 </html>

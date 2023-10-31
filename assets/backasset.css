@@ -37,6 +37,19 @@
   }
 }
 /*렌딩 페이지*/
+#persona, #landingPage {
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+#landingPage {
+  opacity: 1;
+}
+
+.visible {
+  opacity: 1;
+}
+
 .landingPage {
   width: 100%;
   height: 100%;
@@ -59,6 +72,36 @@
   margin-left: 25rem;
   color: rgb(255, 234, 44);
   font-size: 20rem;
+  animation-name: colorChange;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  font-family: "Rubik Beastly", cursive;
+}
+
+@keyframes colorChange {
+  0% {
+    color: rgb(255, 0, 242);
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(255, 0, 242);
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: rgb(255, 0, 242);
+  }
+}
+.MainT {
+  margin-top: 20rem;
+  margin-left: 35rem;
+  font-size: 10rem;
+  animation-name: colorChange;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
   font-family: "Rubik Beastly", cursive;
 }
 
@@ -126,4 +169,10 @@
   top: 2670px;
   left: 5860px;
   transform: translateZ(70px);
+}
+
+.glitch {
+  position: absolute;
+  left: 5000px;
+  top: 6000px;
 }/*# sourceMappingURL=backasset.css.map */
