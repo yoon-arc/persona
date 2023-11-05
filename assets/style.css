@@ -79,6 +79,7 @@ article div.iframe {
   margin-bottom: 10px;
   justify-content: center;
   color: white;
+  font-size: 0.5rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
