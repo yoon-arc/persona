@@ -85,6 +85,19 @@ font-family: 'Rubik Beastly', cursive;
   margin-left: 28rem;
 }
 
+.toggleButton{
+  padding: 10px;
+  font-family: 'Noto Sans KR';
+  font-size: 1.1rem;
+  position: absolute; 
+  top: 115px; 
+  left: 760px; 
+  border-radius: 40px; 
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
 
 .imgContainer {
   position: relative;

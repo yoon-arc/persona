@@ -22,7 +22,7 @@
         <div class="landingAsset">
             <img src="./assets/head.gif">
             <p class="title">persona</p>
-            <h1><br> 입장하기 위해 마우스를 움직이세요<br>To enter, please move the mouse</h1>
+            <h1 class="landingWord"><br> 입장하기 위해 마우스를 움직이세요<br>To enter, please move the mouse</h1>
         </div>
     </div>
 
@@ -94,22 +94,8 @@
                 <img src="./assets/title.gif">
             </div>
             <article id="Intro" data-domain="local" data-loaded="1" data-name="Persona Introduction">
-                <!-- <div class="text">
-                    <h1>Introduction</h1> 
-                    <p>
-                        <br><br>Welcome! This unique online space allows you to delve into 'Jeff's' memories and mental world. 
-                        Immerse yourself in Jeff's world through our prepared video series and interactive elements. For a smooth viewing experience, please refer to the following guidelines.
-                        <br><br>
-                        <br><br>1.To understand the story, watch the videos in alphabetical order from 'a' to 'i'.
-                        <br><br>2.Use the mini-map located at the top left to freely explore this space!
-                        <br><br>3.If you look closely at the elements within the space, you'll be able to discover new things!
-                        <br><br>4.We would appreciate it if you could leave your fresh perspectives and experiences in our guestbook.
-                        <br><br>
-                        <br><br>Enjoy your exploration!
-                    </p>
-                </div> -->
-
-                <div class="text">
+              
+              <div id="KRintro" class="text">
                     <h1>안내글</h1> 
                     <p>
                         <br><br>환영합니다! 이 공간은 프로이트와 칼융의 심리학에 기반하여 제작된 곳으로 인간의 페르소나를 주제로 다루고 있습니다.
@@ -125,13 +111,41 @@
                         <br>
                         <li>ZONE1은 소개글과 영상, </li>
                         <li>ZONE2는 제프의 유년기,</li>
-                        <li>ZONE3은 우측 상단 공간은 제프의 청소년기,</li>
-                        <li>ZONE4는 우측 하단의 공간은 제프의 현재</li>
+                        <li>ZONE3는 제프의 청소년기,</li>
+                        <li>ZONE4는 제프의 현재 이야기,</li>
                         <li>ZONE5는 이 이야기의 엔딩을 다루고 있습니다.</li>
                         <br>미니맵을 통해 다섯 구역을 자유롭게 돌아다니며 <b>영상을 차례대로 관람</b>해주세요!
                         <br>모니터 좌측 '페르소나 관람 메뉴얼'을 참고하셔도 좋습니다!
                     </p>
                 </div>
+
+                  <div id="ENintro" class="text" style="display:none">
+                    <h1>Instructions</h1> 
+                    <p>
+                        <br><br>Welcome! This unique online space based on the psychology of Freud and Carl Jung and explores the theme of the human personality. 
+                        By <ins><b>watching the videos in order,</ins></b> you can explore the psyche of the main character, Jeff.
+                        To ensure a smooth experience, <ins><b>please follow the guidelines below</ins></b> 👀🌟👀.
+                        <br>
+                        <br><br>▪️ <i><b>Tap the mini-map</i></b> in the top left corner to move around freely!
+                        <br><br>▪️ Please refer to the minimap and <i><b>view videos alphabetically</i></b> from 'Video A' to 'Video G'.
+                        <br><br>▪️ <i><b>Hover over objects</i></b> near the video to read Jeff's diary entry
+                        <br><br>▪️ When you're done, go to the GUEST BOOK section and leave a comment of your experience🤍
+                        <br><br>
+                        <br><br>The space is divided into five main areas.
+                        <br>
+                        <li>ZONE1 is more like an Introduction part,</li>
+                        <li>ZONE2 is about Jeff's childhood,</li>
+                        <li>ZONE3 is about Jeff's Adolescence,</li>
+                        <li>ZONE4 is showing Jeff's current story</li>
+                        <li>ZONE5 is dealing with the ending of this whole story.</li>
+                        <br>Use the minimap to move around the five zones and <b>watch the videos in order!</b>
+                        <br>You can also refer to 'Persona Manual' on the left side of the screen!
+
+
+                        <br><br>Enjoy your exploration!
+                    </p>
+                </div>
+                <button id="toggleButton" class="toggleButton">KR/EN 전환</button>
             </article>
 
             <div class="mapIcon" style="width: 18.12px; height: 14.04px; top: 2840px; left: 970px; z-index: 0; border: none; background: black;">
@@ -147,46 +161,46 @@
     
             <article id="VideoB" class="" data-domain="youtube-nocookie.com" data-loaded="1" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/2h70osEDvX8?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoB" data-youtubesync="true" style="z-index: 1; top: 4930px; left: 360px; width: 1600px; height: 970px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/2h70osEDvX8?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe2" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoB" src="https://www.youtube-nocookie.com/embed/2h70osEDvX8?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                     <input type="range" min="0" max="100" step="10" class="volumeSlider" data-player-id="artwork39">
                 </div>
             </article>
             <article id="VideoC" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-type="art" data-src="https://www.youtube-nocookie.com/embed/hIggOw_jNdE?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoC" data-youtubesync="true" style="z-index: 1; top: 6050px; left: 1970px; width: 1608px; height: 1000px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe3" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoC" src="https://www.youtube-nocookie.com/embed/hIggOw_jNdE?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe3" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoC" src="https://www.youtube-nocookie.com/embed/hIggOw_jNdE?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                 </div>
             </article>
-            <article id="VideoD" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoD" data-youtubesync="true" style="z-index: 1; top: 900px; left: 5920px; width: 1500px; height: 900px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <article id="VideoD" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoD" data-youtubesync="true" style="z-index: 1; top: 900px; left: 5920px; width: 1500px; height: 900px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe4" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoD" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe4" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoD" src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                 </div>
             </article>
-            <article id="VideoE" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoE" data-youtubesync="true" style="z-index: 1; top: 6580px; left: 5200px; width: 1515px; height: 820px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <article id="VideoE" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoE" data-youtubesync="true" style="z-index: 1; top: 6580px; left: 5200px; width: 1515px; height: 820px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe6" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoE" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe6" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoE" src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                 </div>
             </article>
-            <article id="VideoF" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoF" data-youtubesync="true" style="z-index: 1; top: 5555px; left: 6350px; width: 1225px; height: 815px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <article id="VideoF" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoF" data-youtubesync="true" style="z-index: 1; top: 5555px; left: 6350px; width: 1225px; height: 815px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe7" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoF" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe7" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoF" src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                 </div>
             </article>
-            <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3590px; width: 1320px; height: 780px; border-width: 1px; background-color: rgb(255, 255, 255);">
+            <article id="VideoG" class="" data-domain="youtube-nocookie.com" data-loaded="0" data-id="" data-type="art" data-src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-name="VideoG" data-youtubesync="true" style="z-index: 1; top: 3500px; left: 3590px; width: 1320px; height: 780px; border-width: 1px; background-color: rgb(255, 255, 255);">
                 <div style="width:100%; height:100%" class="iframe">
-                    <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/zn8-R2NWNJ0?autoplay=0&amp;controls=0&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
+                    <iframe id="iframe8" class="iframe" data-showvolume="true" data-volume="100" scrolling="no" frameborder="0" allow="autoplay" muted="" width="100%" height="100%" tabindex="-1" title="VideoG" src="https://www.youtube-nocookie.com/embed/2m66KQFcw1I?autoplay=0&amp;controls=1&amp;rel=0&amp;enablejsapi=1&amp;playsinline=1" data-video="false">
                     </iframe>
                 </div>
             </article>
 
             <!--이미지 -->
-            <article id="journal" class="" style="z-index: 1; top: 5080px; left: 2000px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
+            <article id="journal" class="" style="z-index: 1; top: 5200px; left: 2200px; width: 1000px; height: 1000px; border: none; background-color: rgba(0, 0, 0, 0);">
                 <div class="imgContainer" style="width: 800px; height: 1000px;" onmousedown="switchJR()" onmouseout="resetJR()" onmouseover="showJR()">
-                    <img id="OBJR" src="./assets/cup.png" alt="journal" class="imgSmall">
+                    <img id="OBJR" src="./assets/YJ.png" alt="journal" class="imgSmall">
                     <div id="hiddenJR" style="display:none">
                         <img id="KRJR" src="./assets/Youngjournal.png" alt="journal" class="imgLarge">
                         <img id="ENJR" src="./assets/Youngjournal_EN.png" alt="journal" class="imgLarge">
@@ -262,5 +276,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/timeout.js"></script>
     <script src="./js/hideshow.js"></script>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+    var KRintro = document.getElementById('KRintro');
+    var ENintro = document.getElementById('ENintro');
+
+    if (KRintro.style.display === "none") {
+        KRintro.style.display = "block";
+        ENintro.style.display = "none";
+    } else {
+        KRintro.style.display = "none";
+        ENintro.style.display = "block";
+    }
+});
+    </script>
 </body>
 </html>
