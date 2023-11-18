@@ -33,3 +33,23 @@ function showJR(){
     document.getElementById("OBJR").style.visibility="hidden";
     document.getElementById("hiddenJR").style.display="block";
 }
+
+
+
+
+function switchIP(){
+    document.getElementById("RIP").style.visibility="hidden";
+    document.getElementById("EIP").style.visibility="visible";
+}
+
+function resetIP(){
+    document.getElementById("HN").style.display="none";
+    document.getElementById("AN").style.visibility="visible";
+} 
+
+function showIP(){
+    document.getElementById("EIP").style.visibility="hidden";
+    document.getElementById("RIP").style.visibility="visible";
+    document.getElementById("AN").style.visibility="hidden";
+    document.getElementById("HN").style.display="block";
+}

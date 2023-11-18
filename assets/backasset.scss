@@ -10,7 +10,7 @@
 
 .cloudS {
   position: absolute;
-  animation: moveClouds linear 100s infinite; /* 애니메이션 이름, 속도 조절, 반복 설정 */
+  animation: moveClouds linear 70s infinite; /* 애니메이션 이름, 속도 조절, 반복 설정 */
 }
 
 @keyframes moveClouds {
